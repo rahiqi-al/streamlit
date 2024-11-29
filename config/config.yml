@@ -1,0 +1,24 @@
+QUERIES :
+  table_anoonces : "select * from annonces ;"
+  table_villes : "select * from villes ;"
+  table_annonce_equipement : "select * from annonce_equipement ;"
+  table_equipements: "select * from equipements ;"
+
+COLUMNS:
+  columns_annonces:
+    - id_annonces
+    - title
+    - price
+    - datetime
+    - nb_rooms
+    - nb_baths
+    - surface_area
+    - link
+    - city_id
+  columns_villes : ["id_ville", "ville_name"]
+  columns_annonce_equipement : ["annonce_id", "equipement_id"]
+  columns_equipement : ["id_equipement", "equipement_name"]
+  describe_array : ['price','nb_rooms','nb_baths','surface_area']
+
+  
+
