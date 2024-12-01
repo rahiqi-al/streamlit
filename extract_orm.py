@@ -52,7 +52,6 @@ def extract_orm(session,Base,engine,min_price,max_price,min_rooms,max_rooms,min_
         annonces = relationship("AnnonceEquipement", back_populates="equipement")
 
 
-    Base.metadata.create_all(engine)
 
 
     filted_obj = (session.query(Annonce,Ville,AnnonceEquipement,Equipement).join(Ville ,Ville.id==Annonce.city_id).join
